@@ -1,8 +1,8 @@
-# EzzyQuizzy
+# EzzyQuizzy 🤔
 
 * React Quiz Web Application
 
-### 👀 [Live Link](https://https://ezzyquizzy.netlify.app/) 
+### 👀 [Live Link](https://ezzyquizzy.netlify.app/) 
 
 * Deployed at [Netlify](https://netlify.com).
 
