@@ -1,0 +1,19 @@
+  .resultbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #6776ff 0%, #80ffdb 117.88%);
+    gap: 2rem;
+  }
+  
+  .resultstats {
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    gap: 3rem;
+  }
+  

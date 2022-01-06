@@ -1,0 +1,166 @@
+  .quizcard {
+    height: 50%;
+    width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+  }
+
+  .startbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #6776ff 0%, #80ffdb 117.88%);
+  }  
+  
+  .topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 33%;
+    padding: 20px;
+    font-weight: 500;
+  }
+
+  .heading {
+    color: #b2a9a9;
+  }
+  
+  .question {
+    background-color: rgba(128, 255, 219, 0.2);
+    height: 33%;
+    padding: 20px;
+    font-weight: 500;
+  }
+  
+  .input {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    padding: 0.5rem;
+    color: #222;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .input::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .result {
+    color: #fff;
+    background: linear-gradient(91.23deg, #6776ff 0%, #80ffdb 131.71%);
+    height: 34%;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .answer {
+    margin-bottom: 4px;
+  }
+
+  .button {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    font-size: 16px;
+  }  
+  
+  @keyframes fadein {
+    from {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .answertext {
+    display: flex;
+    align-items: center;
+    animation: fadein 0.3s ease-in;
+  }
+  
+  .soldiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .revealbtn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .form {
+    width: 50%;
+  }
+  
+  .lottiediv {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .quecontainer {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .quediv {
+    display: grid;
+    transition: transform 0.8s ease-in;
+  }
+  
+  @media (max-width: 1024px) {
+    .quizcard {
+      width: 80%;
+      height: 45%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .quizcard {
+      width: 90%;
+      height: 60%;
+    }
+    .topic {
+      padding: 15px;
+    }
+    .question {
+      padding: 15px;
+    }
+    .result {
+      padding: 15px;
+    }
+    .form {
+      width: 100%;
+    }
+    .soldiv {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .quizcard {
+      height: 70%;
+      width: 95%;
+    }
+  }
+  

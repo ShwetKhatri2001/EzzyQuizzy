@@ -1,13 +1,37 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  max-width: 1400px;
+  background: linear-gradient(rgba(128, 255, 219, 0.2) 50%, #fff 50%);
+  margin: auto;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/dots_horizontal.png"), url("./assets/dots_verticle.png");
+  background-size: 20%, 170px;
+  background-position: 8%, 82%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 640px) {
+  .App {
+    background-image: url("./assets/dots_horizontal.png");
+    background-size: 55%;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+  }
 }
